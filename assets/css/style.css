@@ -1,0 +1,291 @@
+body {
+    margin: 0; /*margem do documento*/
+    padding: 0; /*preenchimento do documento*/
+    box-sizing: border-box; /*dimensionamento da caixa*/
+    font-family: 'Open Sans', sans-serif; /*fonte da pagina*/
+    background-color: rgb(39, 69, 151); /*cor de fundo da pagina*/
+}
+
+ul {
+    list-style: none; /*estilo da lista*/
+    padding: 0; /*preenchimento do desordenamento de lista*/
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+main {    /*estava como header*/
+    justify-content: center;    /*alinhamento vertical*/
+    align-items: center;    /*alinhamento horizontal*/
+}
+
+.faixa {
+    width: 99vw; /*largura da imagens*/
+    justify-content: center;
+    display: flex;
+}
+
+.faixa img {
+    width: 100%; /*largura*/
+    height: 140px; /*altura*/
+    height: 30vh;/*altura em view heigth*/
+}
+
+img {
+    width: 70px; /*largura*/
+    height: 70px; /*altura*/
+}
+
+img, h1 {
+    display: inline-block; /*bloco de linhas*/
+}
+
+img, h1 {
+    float: left; /*imagem flutuante lado esquedo superior*/
+}
+
+nav {
+    background-color: #2f6cc7; /*barra de navegação superior*/
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 32px; /*tamanho do nome Setups*/
+}
+
+h2 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 32px; /*tamanho do nome Setups*/
+    padding: 5px;
+    line-height: 20px;
+}
+
+
+h1,h2:hover {
+    transform: scale(1.1); /*transformação da escala*/
+    transition: all 0.8s; /*transição do item*/
+}
+
+nav a {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0px;
+    line-height: 50px;
+}
+
+nav,
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    padding: 0 20px;
+    list-style-type: none;
+}
+
+.cadastrar {
+    font-weight: 800;
+}
+
+li a {
+    font-weight: 500;
+}
+
+nav li:hover {
+    transform: scale(1.1); /*transformação da escala*/
+    transition: all 0.8s; /*transição do item*/
+}
+
+h1 {
+    margin: 0;
+    padding: 10px;
+}
+
+h5 {
+    font-weight: bolder;
+    line-height: 0;
+}
+
+h4 {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 0.25rem;
+    display: flex;
+    background-color: #2f6cc7;
+    color: #dcdcdc;
+    cursor:pointer;
+    height: 3rem;
+    width: auto;
+    height: 10%;
+}
+
+h4:hover {
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+li:hover,
+h1:hover,
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+button:focus~ul {
+    height: 300px;
+}
+
+p {
+    padding: 10px;
+    line-height: 0;
+}
+
+.secao h2{
+    text-align: center;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;    /*quebra a linha flex*/
+    justify-content: space-evenly;  /*distribui espaços iguais entre os itens (produto)*/
+    gap: 2rem;  /*espaço entre linhas e colunas*/
+    margin-bottom: 10vh;
+}
+
+.produtos a {
+    color: #000000;
+    text-decoration: none;
+    padding: 0px;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15vw;
+    height: 60vh;
+    background-color: #ffffff;
+    border-radius: 15px; /*bordas arredondadas*/
+    padding: 5px;
+}
+
+.produto:hover { /*efeito de transição ao passar o mouse por cima*/
+        transform: scale(1.08); /*transformação da escala*/
+        transition: all 0.8s; /*transição do item*/
+}
+
+.produto h3 {
+    font-size: 100%; /*peso da fonte*/
+    font-weight: 100;   /*tamanho da fonte*/
+    text-align: center;
+    /*border: 1px solid red;*/ /*borda de referência*/
+}
+
+.preco {    /*preço antigo (riscado)*/
+    text-decoration: line-through; /*deixa o texto riscado*/
+}
+
+.produto p {
+    font-size: 2vh;
+    font-weight: 100;
+    margin: 0;
+}
+
+.estrelas {
+    padding: 5px;
+    align-items: center;
+}
+
+.estrelas img {
+    height: 100%;
+    width: 100px;
+}
+
+.estrelas:hover { /*efeito de transição ao passar o mouse por cima*/
+    transform: scale(1.5); /*transformação da escala*/
+    transition: all 0.6s; /*transição do item*/
+}
+
+.foto {
+    width: 78%;
+    height: 60%;
+    display: flex;
+    justify-content: center;    /*centralizar as imagens*/
+    align-items: center;
+}
+
+.foto:hover {
+    transform: scale(1.05); /*transformação da escala*/
+    transition: all 0.8s; /*transição do item*/
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    height: 4rem; /*altura*/
+    display: flex; /*tela flexivel*/
+    font-size: 1rem; /*tamanho da fonte*/
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center; /*conteudo justificado*/
+    align-items: center; /*alinhamento de itens*/
+    color: #ffffff; /*cor*/
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: auto;
+}
+
+@media (max-width: 700px) { /*media para dispositivos móveis*/
+
+    nav,
+    ul {
+        flex-direction: column;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+
+    h1 {
+        margin: 10px;
+        /*padding: 10px;*/
+    }
+
+    nav {
+        padding: 0px;
+        align-items: flex-start;
+    }
+
+    button {
+        display: flex;
+    }
+
+    li,
+    ul {
+        width: 100%;
+    }
+}
